@@ -1,0 +1,9 @@
+@startuml
+actor "Administrador" as Admin
+
+package "Gestión de Asignaturas" {
+    usecase "Mostrar Asignaturas" as MostrarAsignaturas
+}
+
+Admin --> MostrarAsignaturas
+@enduml

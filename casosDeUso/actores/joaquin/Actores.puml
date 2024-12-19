@@ -1,0 +1,9 @@
+@startuml
+actor "Profesor" as Profesor
+note right of Profesor : Puede ser asignado a asignaturas\ny visualizar su horario.
+
+actor "Administrador" as Admin
+note right of Admin : Puede asignar profesores a asignaturas,\nconfigurar horarios y confirmar\nla configuración final.
+
+Profesor <|-- Admin : Puede hacer lo que hace un Profesor\nmás tareas de administración
+@enduml

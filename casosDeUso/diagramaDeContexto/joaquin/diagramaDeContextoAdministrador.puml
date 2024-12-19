@@ -1,0 +1,23 @@
+@startuml
+actor "Administrador" as Admin
+
+package "MENÚ PRINCIPAL" {
+    Admin --> (Crear Horario)
+    Admin --> (Buscar Grado)
+    Admin --> (Mostrar Asignaturas)
+    Admin --> (Ver Disponibilidad de Aulas)
+    Admin --> (Asignar Profesor a Asignatura)
+    Admin --> (Editar Asignación de Asignatura)
+    Admin --> (Confirmar Horario)
+    Admin --> (Cerrar Sesión)
+
+    note right of (Crear Horario) : Configurar horarios y asignar horas
+    note right of (Buscar Grado) : Buscar información de grados
+    note right of (Mostrar Asignaturas) : Ver asignaturas registradas
+    note right of (Ver Disponibilidad de Aulas) : Revisar aulas disponibles
+    note right of (Asignar Profesor a Asignatura) : Relacionar profesor con asignatura
+    note right of (Editar Asignación de Asignatura) : Modificar asignaciones existentes
+    note right of (Confirmar Horario) : Guardar y finalizar horario
+}
+
+@enduml

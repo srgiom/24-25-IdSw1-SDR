@@ -1,0 +1,13 @@
+@startuml
+actor "Administrador" as Admin
+
+package "Gestión de Asignaturas" {
+    usecase "Asignar Asignatura" as AsignarAsignatura
+    usecase "Seleccionar Día" as SeleccionarDia
+    usecase "Seleccionar Horario" as SeleccionarHorario
+}
+
+Admin --> AsignarAsignatura
+AsignarAsignatura --> SeleccionarDia : Elige el día
+AsignarAsignatura --> SeleccionarHorario : Elige el horario
+@enduml

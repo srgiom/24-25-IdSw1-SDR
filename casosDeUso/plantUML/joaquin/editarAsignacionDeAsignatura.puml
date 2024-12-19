@@ -1,0 +1,13 @@
+@startuml
+actor "Administrador" as Admin
+
+package "Gestión de Asignaturas" {
+    usecase "Editar Asignación de Asignatura" as EditarAsignacion
+    usecase "Cambiar Día" as CambiarDia
+    usecase "Cambiar Horario" as CambiarHorario
+}
+
+Admin --> EditarAsignacion
+EditarAsignacion --> CambiarDia : Modificar día asignado
+EditarAsignacion --> CambiarHorario : Modificar horario asignado
+@enduml

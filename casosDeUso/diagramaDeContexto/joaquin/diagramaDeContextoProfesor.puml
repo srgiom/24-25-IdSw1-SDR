@@ -1,0 +1,11 @@
+@startuml
+actor "Profesor" as Profesor
+
+package "MENÚ PRINCIPAL" {
+    Profesor --> (Ver Horario)
+    Profesor --> (Ver Asignaturas)
+
+    note right of (Ver Horario) : Consultar su horario asignado
+    note right of (Ver Asignaturas) : Ver las asignaturas que tiene asignadas
+}
+@enduml

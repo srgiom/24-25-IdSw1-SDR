@@ -1,0 +1,10 @@
+@startuml
+
+
+package "Manejo de Sesión" {
+    usecase "Iniciar Sesión" as IniciarSesion
+}
+
+Admin --> IniciarSesion
+
+@enduml

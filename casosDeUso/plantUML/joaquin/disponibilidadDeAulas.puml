@@ -1,0 +1,11 @@
+@startuml
+actor "Administrador" as Admin
+
+package "Gestión de Aulas" {
+    usecase "Asignar Aula Automáticamente" as AsignarAula
+    usecase "Validar Disponibilidad" as ValidarDisponibilidad
+}
+
+Admin --> AsignarAula
+AsignarAula --> ValidarDisponibilidad : Chequear aulas disponibles
+@enduml

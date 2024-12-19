@@ -1,0 +1,11 @@
+@startuml
+actor "Administrador" as Admin
+actor "Profesor" as Profesor
+
+package "Gestión de Profesores y Asignaturas" {
+    usecase "Asignar Profesor a Asignatura" as AsignarProfesor
+}
+
+Admin --> AsignarProfesor
+AsignarProfesor --> Profesor : Profesor es asignado
+@enduml
